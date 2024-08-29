@@ -11,12 +11,16 @@ class Menu extends React.Component {
           <nav className="nav_menu">
             <ul>
               <li>
-                <NavLink to="/home">Главная</NavLink>
+                <NavLink to="/home" className={setActive}>
+                  Главная
+                </NavLink>
               </li>
             </ul>
             <ul>
               <li>
-                <NavLink to="/about">О нас</NavLink>
+                <NavLink to="/about" className={setActive}>
+                  О нас
+                </NavLink>
               </li>
             </ul>
           </nav>
@@ -33,4 +37,6 @@ class Menu extends React.Component {
   }
 }
 
-export 
+const setActive = ({ isActive }) => (isActive ? "nav__but:active" : "nav__but");
+
+export default Menu;
