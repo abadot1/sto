@@ -6,6 +6,19 @@ html {
   box-sizing: inherit;
 }
 
+body,
+a {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  color: #ffffff;
+}
+
+a {
+  text-decoration: none;
+}
+
 #root {
   background-color: #020611;
 }
@@ -13,4 +26,28 @@ html {
 .container {
   max-width: 1280px;
   margin: 0 auto;
+}
+
+.viber {
+  fill: #595094;
+  height: 17px;
+  width: 17px;
+}
+
+.whatsApp {
+  fill: #069e08;
+  height: 17px;
+  width: 17px;
+}
+
+.phone {
+  fill: #ff0000;
+  height: 17px;
+  width: 17px;
+}
+
+.mapPin {
+  fill: #ff0000;
+  height: 17px;
+  width: 17px;
 }
