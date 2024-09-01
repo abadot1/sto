@@ -20,7 +20,7 @@ class Header extends React.Component {
               </div>
               <div className="navigation__wrap">
                 <nav className="nav_menu">
-                  <ul>
+                  <ul className="menu">
                     <li className="nav_link">
                       <NavLink to="/home" className={setActive}>
                         Главная
@@ -66,14 +66,14 @@ class Header extends React.Component {
                     </a>
                   </div>
                 </div>
-                <div className="adress__wrap">
-                  <a href="https://yandex.by/maps/-/CDwmf63U">
-                    <p>
-                      <MapPin className="mapPin" />
-                      Кличев, ул.Пролетармкая, 104
-                    </p>
-                  </a>
-                </div>
+              </div>
+              <div className="adress__wrap">
+                <a href="https://yandex.by/maps/-/CDwmf63U">
+                  <p>
+                    <MapPin className="mapPin" />
+                    Кличев, ул.Пролетармкая, 104
+                  </p>
+                </a>
               </div>
             </div>
           </div>
@@ -83,6 +83,6 @@ class Header extends React.Component {
   }
 }
 
-const setActive = ({ isActive }) => (isActive ? "nav__but" : "");
+const setActive = ({ isActive }) => (isActive ? "active-link" : "");
 
 export default Header;
