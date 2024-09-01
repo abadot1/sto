@@ -2,7 +2,9 @@ html {
   box-sizing: border-box;
 }
 
-* {
+*,
+:after,
+:before {
   box-sizing: inherit;
 }
 
@@ -25,34 +27,60 @@ a {
 
 .container {
   max-width: 1280px;
-  margin: 0 auto;
+  margin: 20 auto;
 }
 
 .header__wrap {
-  padding: 20px 15px;
+  height: 90px;
+  padding: 20px 30px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: center;
+  align-items: stretch;
 }
 
 .logo {
   max-height: 50px;
 }
 
-.menu {
+.nav_menu {
   display: flex;
   gap: 15px;
+  justify-content: center;
+  align-items: center;
 }
 
-.menu a {
+.nav_link {
+  list-style-type: none;
+}
+
+.nav_link a {
+  position: relative;
+  padding: 15px 5px;
   font-size: 15px;
   font-weight: 500;
   text-transform: uppercase;
+  text-decoration: none;
+}
+
+.nav_link a::after {
+  content: "";
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  background-color: #ffffff65;
+  /* z-index: -1; */
+  width: 0%;
+  height: 100%;
+  transition: 0.8s;
+}
+
+.nav_link a:hover::after {
+  width: 100%;
 }
 
 .active-link {
-  color: red;
+  background-color: #ffffff65;
 }
 
 .viber {

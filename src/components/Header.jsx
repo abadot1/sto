@@ -14,36 +14,32 @@ class Header extends React.Component {
           <div className="container">
             <div className="header__wrap">
               <div className="logo__wrap">
-                <NavLink to="/home">
+                <NavLink to="/">
                   <img src={logo} alt="logo" className="logo" />
                 </NavLink>
               </div>
-              <div className="navigation__wrap">
-                <nav className="nav_menu">
-                  <ul className="menu">
-                    <li className="nav_link">
-                      <NavLink to="/home" className={setActive}>
-                        Главная
-                      </NavLink>
-                    </li>
-                    <li className="nav_link">
-                      <NavLink to="/services" className={setActive}>
-                        Услуги
-                      </NavLink>
-                    </li>
-                    <li className="nav_link">
-                      <NavLink to="/price" className={setActive}>
-                        Прейскурант
-                      </NavLink>
-                    </li>
-                    <li className="nav_link">
-                      <NavLink to="/about" className={setActive}>
-                        О нас
-                      </NavLink>
-                    </li>
-                  </ul>
-                </nav>
-              </div>
+              <nav className="nav_menu">
+                <li className="nav_link">
+                  <NavLink to="/" className={setActive}>
+                    Главная
+                  </NavLink>
+                </li>
+                <li className="nav_link">
+                  <NavLink to="/services" className={setActive}>
+                    Услуги
+                  </NavLink>
+                </li>
+                <li className="nav_link">
+                  <NavLink to="/price" className={setActive}>
+                    Прейскурант
+                  </NavLink>
+                </li>
+                <li className="nav_link">
+                  <NavLink to="/about" className={setActive}>
+                    О нас
+                  </NavLink>
+                </li>
+              </nav>
               <div className="contacts__wrap">
                 <div className="num__wrap">
                   <p>Контакты:</p>
