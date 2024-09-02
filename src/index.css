@@ -157,6 +157,21 @@ a {
   padding: 0 30px;
 }
 
-h1 {
+.title_header {
   font-size: 50px;
+  padding-top: 50px;
+  font-weight: 400;
+  line-height: 1.2;
+}
+
+.title_header span {
+  font-weight: 700;
+  color: #e73232;
+}
+
+.subtitle_header {
+  padding-top: 50px;
+  font-weight: 300;
+  font-size: 25px;
+  line-height: 1.2;
 }

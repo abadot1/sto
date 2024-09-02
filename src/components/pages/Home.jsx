@@ -7,12 +7,14 @@ class Home extends React.Component {
     return (
       <>
         <div className="home__wrap">
-          {/* <img src={hero} alt="hero" className="bckg__home" /> */}
           <div className="container">
-            <h1>
-              Профессиональный <span>шиномонтаж</span> в Кличеве
+            <h1 className="title_header">
+              Профессиональный <br /> <span>шиномонтаж</span> <br />в Кличеве
             </h1>
-            <p>Качественный сервис и обслуживание в любую погоду</p>
+            <p className="subtitle_header">
+              Качественный сервис и обслуживание
+              <br /> в любую погоду
+            </p>
             <NavLink to="/services">Услуги</NavLink>
           </div>
         </div>
