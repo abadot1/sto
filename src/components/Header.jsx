@@ -43,7 +43,12 @@ class Header extends React.Component {
               <div className="contacts__wrap">
                 <p className="contacts__head">Контакты:</p>
                 <div className="num__wrap">
-                  <a href="tel:+375293584596" className="number_link__head">
+                  <a
+                    href="tel:+375293584596"
+                    className="number_link__head"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     <p>
                       <Phone className="phone" />
                       +375 (29) 358-45-96
@@ -52,19 +57,31 @@ class Header extends React.Component {
                 </div>
                 <div className="social__wrap">
                   <div className="social__item">
-                    <a href="viber://chat?number=%2B375293584596">
+                    <a
+                      href="viber://chat?number=%2B375293584596"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
                       <Viber className="viber" />
                     </a>
                   </div>
                   <div className="social__item">
-                    <a href="https://api.whatsapp.com/send?phone=375293584596">
+                    <a
+                      href="https://api.whatsapp.com/send?phone=375293584596"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
                       <WhatsApp className="whatsApp" />
                     </a>
                   </div>
                 </div>
               </div>
               <div className="adress__wrap">
-                <a href="https://yandex.by/maps/-/CDwmf63U">
+                <a
+                  href="https://yandex.by/maps/-/CDwmf63U"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <p>
                     <MapPin className="mapPin" />
                     Кличев, ул.Пролетарcкая, 104
