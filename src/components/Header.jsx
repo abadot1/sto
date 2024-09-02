@@ -41,12 +41,12 @@ class Header extends React.Component {
                 </li>
               </nav>
               <div className="contacts__wrap">
+                <p className="contacts__head">Контакты:</p>
                 <div className="num__wrap">
-                  <p>Контакты:</p>
-                  <a href="tel:+375293584596">
+                  <a href="tel:+375293584596" className="number_link__head">
                     <p>
                       <Phone className="phone" />
-                      +375293584596
+                      +375 (29) 358-45-96
                     </p>
                   </a>
                 </div>
@@ -67,7 +67,7 @@ class Header extends React.Component {
                 <a href="https://yandex.by/maps/-/CDwmf63U">
                   <p>
                     <MapPin className="mapPin" />
-                    Кличев, ул.Пролетармкая, 104
+                    Кличев, ул.Пролетарcкая, 104
                   </p>
                 </a>
               </div>
