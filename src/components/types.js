@@ -1,0 +1,7 @@
+export const UPDATE_ON = "UPDATE_ON";
+export const UPDATE_OFF = "UPDARE_OFF";
+
+export const SERVICE_CREATE = "SERVICE_CREATE";
+export const SERVICE_UPDATE = "SERVICE_UPDATE";
+export const SERVICE_DELETE = "SERVICE_DELETE";
+export const SERVICE_LOAD = "SERVICE_LOAD";
